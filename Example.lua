@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet(
-"https://raw.githubusercontent.com/Alexihax/Alexihax-GUI/main/Library.lua"
+"https://raw.githubusercontent.com/Alexihax/Alexihax-GUI/main/Library.lua?"..tick()
 ))()
 
 local Window = Library:CreateWindow({
@@ -7,5 +7,7 @@ local Window = Library:CreateWindow({
 })
 
 local Combat = Window:CreateTab("Combat")
-local Player = Window:CreateTab("Player")
-local Visuals = Window:CreateTab("Visuals")
+
+local General = Combat:CreateSection("General")
+local Weapon = Combat:CreateSection("Weapon")
+local Actions = Combat:CreateSection("Actions")
