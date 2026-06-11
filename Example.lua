@@ -3,11 +3,11 @@ local Library = loadstring(game:HttpGet(
 ))()
 
 local Window = Library:CreateWindow({
-    Name = "Astra Hub"
+    Name = "Alexihax Hub"
 })
 
 local Combat = Window:CreateTab("Combat")
 
-local General = Combat:CreateSection("General")
-local Weapon = Combat:CreateSection("Weapon")
-local Actions = Combat:CreateSection("Actions")
+Combat:CreateSection("General")
+Combat:CreateSection("Weapon")
+Combat:CreateSection("Actions")
